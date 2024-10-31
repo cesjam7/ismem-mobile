@@ -1,0 +1,7 @@
+{
+  "name": "ismem-app",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
