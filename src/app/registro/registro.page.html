@@ -1,0 +1,21 @@
+<ion-content [fullscreen]="true">
+  <div class="formulario">
+    <div class="logo">
+      <img src="https://media.licdn.com/dms/image/v2/D4E0BAQHIkMwAtel97g/company-logo_200_200/company-logo_200_200/0/1710094716269/ismem_logo?e=2147483647&v=beta&t=qUwjUb47iEhMMo_PSmzCOrTuMAnUrKfL3XKhbUYi1eU" alt="">
+    </div>
+    <div class="error" [hidden]="error == ''">{{ error }}</div>
+    <div class="campo">
+      <ion-input label="Correo electrónico" labelPlacement="stacked"
+        placeholder="Ingresar correo" [(ngModel)]="email"></ion-input>
+    </div>
+    <div class="campo">
+      <ion-input type="password" label="Contraseña" labelPlacement="stacked"
+        placeholder="Ingresar contraseña" [(ngModel)]="password">
+        <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+      </ion-input>
+    </div>
+    <div class="boton">
+      <ion-button (click)="registro()">Registrarse</ion-button>
+    </div>
+  </div>
+</ion-content>

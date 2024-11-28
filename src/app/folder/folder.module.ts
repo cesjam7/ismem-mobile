@@ -8,6 +8,8 @@ import { FolderPageRoutingModule } from './folder-routing.module';
 
 import { FolderPage } from './folder.page';
 
+import { ChatComponent } from '../components/chat/chat.component';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -15,6 +17,8 @@ import { FolderPage } from './folder.page';
     IonicModule,
     FolderPageRoutingModule
   ],
-  declarations: [FolderPage]
+  declarations: [FolderPage,
+    ChatComponent
+  ]
 })
 export class FolderPageModule {}
